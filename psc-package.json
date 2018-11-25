@@ -4,6 +4,8 @@
   "source": "https://github.com/purescript/package-sets.git",
   "depends": [
     "prelude",
-    "react-basic"
+    "psci-support",
+    "react-basic",
+    "test-unit"
   ]
 }
