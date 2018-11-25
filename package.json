@@ -16,7 +16,9 @@
   },
   "devDependencies": {
     "psc-package-bin-simple": "^2.0.1",
-    "purescript": "^0.12.1"
+    "purescript": "^0.12.1",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2"
   },
   "homepage": "https://github.com/bouzuya/purescript-react-basic-fizzbuzz#readme",
   "keywords": [],
@@ -28,7 +30,7 @@
   },
   "scripts": {
     "build": "psc-package sources | xargs purs compile 'src/**/*.purs' 'test/**/*.purs'",
-    "bundle": "purs bundle ./output/Main/index.js --output ./public/index.js --main Main",
+    "bundle": "webpack --mode production --entry ./index.js --output ./public/index.js",
     "postinstall": "psc-package install",
     "psc-package": "psc-package",
     "purs": "purs",
