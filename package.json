@@ -1,0 +1,20 @@
+{
+  "name": "purescript-react-basic-fizzbuzz",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bouzuya/purescript-react-basic-fizzbuzz.git"
+  },
+  "keywords": [],
+  "author": "bouzuya <m@bouzuya.net> (https://bouzuya.net/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bouzuya/purescript-react-basic-fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/bouzuya/purescript-react-basic-fizzbuzz#readme"
+}
