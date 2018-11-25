@@ -1,20 +1,24 @@
 {
   "name": "purescript-react-basic-fizzbuzz",
+  "description": "mockmock.dev #191 application",
   "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "author": {
+    "name": "bouzuya",
+    "email": "m@bouzuya.net",
+    "url": "https://bouzuya.net/"
   },
+  "bugs": {
+    "url": "https://github.com/bouzuya/purescript-react-basic-fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/bouzuya/purescript-react-basic-fizzbuzz#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bouzuya/purescript-react-basic-fizzbuzz.git"
   },
-  "keywords": [],
-  "author": "bouzuya <m@bouzuya.net> (https://bouzuya.net/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bouzuya/purescript-react-basic-fizzbuzz/issues"
-  },
-  "homepage": "https://github.com/bouzuya/purescript-react-basic-fizzbuzz#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
