@@ -10,6 +10,14 @@
   "bugs": {
     "url": "https://github.com/bouzuya/purescript-react-basic-fizzbuzz/issues"
   },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "psc-package-bin-simple": "^2.0.1",
+    "purescript": "^0.12.1"
+  },
   "homepage": "https://github.com/bouzuya/purescript-react-basic-fizzbuzz#readme",
   "keywords": [],
   "license": "MIT",
