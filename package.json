@@ -28,6 +28,7 @@
   },
   "scripts": {
     "build": "psc-package sources | xargs purs compile 'src/**/*.purs' 'test/**/*.purs'",
+    "bundle": "purs bundle ./output/Main/index.js --output ./public/index.js --main Main",
     "postinstall": "psc-package install",
     "psc-package": "psc-package",
     "purs": "purs",

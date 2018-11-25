@@ -2,3 +2,4 @@
 /.psc*
 /node_modules/
 /output/
+/public/index.js
