@@ -21,5 +21,5 @@ main = do
   case containerMaybe of
     Nothing -> throw "Container element not found."
     Just c  ->
-      let app = counter {}
+      let app = counter
       in H.render app c

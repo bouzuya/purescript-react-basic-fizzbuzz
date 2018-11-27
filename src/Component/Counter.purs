@@ -8,19 +8,22 @@ type Props = {}
 
 data Action
   = Increment
+  | Reset
 
 component :: Component Props
 component = createComponent "Counter"
 
-counter :: Props -> JSX
-counter = make component { initialState, render, update }
+counter :: JSX
+counter = make component { initialState, render, update } {}
   where
     fizzBuzz n | n `mod` 15 == 0 = "FizzBuzz"
     fizzBuzz n | n `mod` 5 == 0 = "Buzz"
     fizzBuzz n | n `mod` 3 == 0 = "Fizz"
     fizzBuzz n | otherwise = show n
 
-    initialState = { count: 1 }
+    initialCount = 1
+
+    initialState = { count: initialCount }
 
     render self@{ state: { count } } =
       H.div_
@@ -28,11 +31,18 @@ counter = make component { initialState, render, update }
         [ H.text (fizzBuzz count) ]
       , H.br {}
       , H.button
-        { children: [ H.text "++" ]
+        { children: [ H.text " + 1" ]
         , onClick: capture_ self Increment
+        }
+      , H.br {}
+      , H.button
+        { children: [ H.text " = 1" ]
+        , onClick: capture_ self Reset
         }
       ]
 
     update { state } = case _ of
       Increment ->
         Update state { count = state.count + 1 }
+      Reset ->
+        Update state { count = initialCount }
