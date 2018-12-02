@@ -34,12 +34,14 @@
   "scripts": {
     "build": "psc-package sources | xargs purs compile 'src/**/*.purs' 'test/**/*.purs'",
     "bundle": "npm-run-all -s 'bundle:purs' 'bundle:parcel'",
-    "bundle:purs": "purs bundle 'output/**/*.js' --main Main --module Main --output ./public/bundle.js",
     "bundle:parcel": "parcel build ./public/index.html",
-    "postinstall": "psc-package install",
+    "bundle:purs": "purs bundle 'output/**/*.js' --main Main --module Main --output ./public/bundle.js",
+    "install:purs": "psc-package install",
+    "prepare": "npm-run-all -s 'install:purs' 'build'",
     "psc-package": "psc-package",
     "purs": "purs",
     "repl": "psc-package repl -- 'test/**/*.purs'",
+    "serve": "parcel ./public/index.html",
     "start": "node --eval \"require('./output/Main').main();\"",
     "test": "node --eval \"require('./output/Test.Main').main();\""
   }
