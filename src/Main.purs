@@ -3,9 +3,8 @@ module Main (main) where
 import Component (counter)
 import Data.Maybe (Maybe(..))
 import Effect (Effect)
-import Effect.Console (log)
 import Effect.Exception (throw)
-import Prelude (Unit, bind, discard)
+import Prelude (Unit, bind)
 import React.Basic.DOM as H
 import Web.DOM.NonElementParentNode (getElementById)
 import Web.HTML (window)
@@ -14,7 +13,6 @@ import Web.HTML.Window (document)
 
 main :: Effect Unit
 main = do
-  log "Hello"
   w <- window
   d <- document w
   containerMaybe <- getElementById "app" (toNonElementParentNode d)
