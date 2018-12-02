@@ -18,9 +18,7 @@
     "npm-run-all": "^4.1.5",
     "parcel-bundler": "^1.10.3",
     "psc-package-bin-simple": "^2.0.1",
-    "purescript": "^0.12.1",
-    "webpack": "^4.26.0",
-    "webpack-cli": "^3.1.2"
+    "purescript": "^0.12.1"
   },
   "homepage": "https://github.com/bouzuya/purescript-react-basic-fizzbuzz#readme",
   "keywords": [],
